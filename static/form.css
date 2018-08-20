@@ -1,0 +1,77 @@
+#outChoice {
+  display:none;
+}
+
+.jumbotron{
+  background-image: url('http://www.321relaxing.com/wp-content/uploads/2016/07/Golden-Sunset-Ocean-2.jpg');
+  text-shadow: -0.3px 0 #FFE4B5, 0 0.3px #FFE4B5, 0.3px 0 #FFE4B5, 0 -0.3px #FFE4B5;
+}
+
+#header {
+  letter-spacing: 2.9px;
+  font-family: 'Carme';
+  font-weight: 900;
+}
+
+#blurbtitle {
+  font-family: 'Poiret One';
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px;
+}
+
+#stuff {
+  font-family: 'Carme';
+  padding: 10px;
+  font-size: 20px;
+}
+
+html {
+  background-color: #404040
+}
+
+.container {
+  background-color: #404040;
+}
+
+.big{
+  width: 70%
+}
+
+#side {
+  width: 20%;
+  height: 450px;
+  background: linear-gradient(to bottom right, white, #FFC259);
+  margin-top: -430px;
+  margin-left: 890px;
+  float: inherit;
+  border-radius: 15px;
+  opacity: 0.8
+  /*display: inline-block;*/
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+.active{
+  font-family: 'Poiret One';
+  font-size: 30px;
+  color: #FFE4B5;
+}
+.door{
+  font-family: 'Carme';
+  font-size: 20px;
+  color: #000000
+}
+
+#sub {
+  font-family: 'Poiret One';
+  text-align: center
+}
+.bar{
+  font-family: 'Poiret One';
+  font-weight: bold;
+  font-size: 20px;
+}

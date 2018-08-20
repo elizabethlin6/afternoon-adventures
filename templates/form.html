@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <form method = 'post' action = ''>
+    <title>Afternoon Adventures</title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poiret%20One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet'>
+
+  </head>
+  <body class = 'container'>
+
+    <style>
+    .list-group-item {background-color: #FFC259;
+                      border-color: #FFE4B5;
+                      border-width: 2px}
+    h1 {
+      font-family: 'Poiret One';
+      font-weight: bold;
+      text-shadow: -0.3px 0 #FFE4B5, 0 0.3px #FFE4B5, 0.3px 0 #FFE4B5, 0 -0.3px #FFE4B5;
+    }
+
+    .navbar-default {
+      background-color: #FFC259;
+      border-color: #FFE4B5;
+    }
+    /* Title */
+    .navbar-default .navbar-brand {
+        color: #FFF1D9;
+    }
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus {
+        color: #FFF1D9;
+    }
+    /* Link */
+    .navbar-default .navbar-nav > li > a {
+        color: #FFF1D9;
+        font-weight: bold;
+    }
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #822110;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        color: #FF6347;
+        background-color: #822110;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #FFC259;
+        background-color: #FFC259;
+    }
+    .nav-tabs a{ color: #FFE4B5}
+    .nav-tabs > li > a:hover{
+      background-color: #303136 !important;
+        border: medium none;
+        border-radius: 0;
+        color:#fff;
+    }
+    .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus{
+            color: #555555;
+            background-color: red;
+        }
+
+
+    </style>
+
+
+    <div class = 'bar'>
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img src='http://balithisweek.com/wp-content/uploads/2015/11/icon-for-sunset.png' alt='icon' style="width:30px;height:30px;"></a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/about">ABOUT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <script>
+    function indoor() {
+        var i = document.getElementById('inChoice');
+        var o = document.getElementById('outChoice');
+        if (i.style.display === 'none') {
+            i.style.display = 'block';
+            o.style.display = 'none';
+        } else {
+            i.style.display = 'none';
+        }
+    }
+
+    function outdoor() {
+        var i = document.getElementById('inChoice');
+        var o = document.getElementById('outChoice');
+        if (o.style.display === 'none') {
+            o.style.display = 'block';
+            i.style.display = 'none';
+        } else {
+            o.style.display = 'none';
+        }
+    }
+    </script>
+
+    <div class="jumbotron">
+      <h1>AFTERNOON ADVENTURES</h1>
+      <p id = 'header'>Choose your own adventure!</p>
+    </div>
+
+
+
+<div class = 'wrapper'>
+    <div class = 'big'>
+      <label for = 'activity' class = 'active'>WHAT TYPE OF ACTIVITY? </label><br><br>
+      <ul class="nav nav-tabs nav-justified">
+        <li role="presentation" class = 'door'><a href="#" onclick = 'indoor()'>Indoor</a></li>
+        <li role="presentation" class = 'door'><a href="#" onclick = 'outdoor()'>Outdoor</a></li>
+      </ul>
+
+      <!-- BEGIN FORM -->
+      <form>
+        <!-- indoor outdoor -->
+        <!-- <div class="btn-group" role="group" aria-label="...">
+          <button type="button" class="btn btn-default btn-group-lg" name = 'weather' value = 'indoor'>Indoor</button>
+          <button type="button" class="btn btn-default btn-group-lg" name = 'weather' value = 'outdoor'>Outdoor</button>
+        </div> -->
+
+        <!-- type of activity -->
+        <div class = 'door'>
+          <div id = 'inChoice'>
+            <ul class="list-group">
+              <li class="list-group-item"><input type="checkbox" name="movie" value="movie"> &nbsp; Movie</li>
+              <li class="list-group-item"><input type="checkbox" name="boba" value="boba"> &nbsp; Boba</li>
+              <li class="list-group-item"><input type="checkbox" name="books" value="books"> &nbsp; Books</li>
+              <li class="list-group-item"><input type="checkbox" name="restaurant" value="restaurant"> &nbsp; Restaurant</li><br>
+            </ul>
+          </div>
+
+          <div id = 'outChoice'>
+            <ul class="list-group">
+              <li class="list-group-item"><input type="checkbox" class = 'item' name="park" value="park"> &nbsp; Park</li>
+              <li class="list-group-item"><input type="checkbox" class = 'item' name="hiking" value="hiking"> &nbsp; Hiking Trails</li>
+              <li class="list-group-item"><input type="checkbox" class = 'item' name="tourist" value="tourist"> &nbsp; Tourist Locations</li>
+              <li class="list-group-item"><input type="checkbox" class = 'item' name="beach" value="beach"> &nbsp; Beach</li><br>
+            </ul>
+          </div>
+          <button type="submit" id = 'sub' class="btn btn-warning btn-lg">SUBMIT</button>
+      </div>
+      </form>
+    </div>
+
+
+    <div id = 'side'>
+      <h1 id = 'blurbtitle'>PLAN YOUR PERFECT AFTERNOON NOW!</h1>
+        <p id = 'stuff'>Choose indoor or outdoor, then check next to what you're interested in.
+          Hit submit, and a list of suggested activities will be returned to you!</p>
+    </div>
+
+
+</div>
+  </body>
+</html>

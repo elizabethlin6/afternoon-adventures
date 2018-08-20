@@ -1,0 +1,110 @@
+html {
+  /*background-image: url('http://natbg.com/wp-content/uploads/2016/09/sunsets-sailboat-golden-sunset-zakat-ozero-lodka-peyzazh-nature-gold-sun-sky-sunsets-full-hd-wallpaper-1920x1080.jpg');*/
+  background-color: #404040
+}
+div.container {
+    width: 100%;
+    background-color: #404040;
+    height: 100%
+}
+
+header{
+    padding: 1em;
+    color: #404040;
+    clear: left;
+    text-align: left;
+}
+
+.annoying {
+    float: left;
+    max-width: 140px;
+    margin: 5;
+    padding: 0em;
+}
+
+p {
+  font-family: 'Carme';
+  color: #FFE4B5
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    padding: 1em;
+    overflow: hidden;
+    color: #FFE4B5;
+}
+p{
+  color: #FFE4B5;
+}
+h1 {
+  font-family: 'Poiret One';
+  font-weight: bold;
+  color: #DE8B2C;
+  background-color: #404040;
+}
+body {
+  background-color: #404040;
+  height: 100%;
+  width: 100%;
+}
+.navbar-default {
+  background-color: #FFC259;
+  border-color: #FFE4B5;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #FFF1D9;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FFF1D9;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #FFF1D9;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #822110;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #FF6347;
+    background-color: #822110;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #FFC259;
+    background-color: #FFC259;
+}
+.nav-tabs a{ color: #FFE4B5}
+.nav-tabs > li > a:hover{
+  background-color: #303136 !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+    color: #555555;
+    background-color: red;
+}
+
+.bar{
+  font-family: 'Poiret One';
+  font-weight: bold;
+  font-size: 20px;
+}
